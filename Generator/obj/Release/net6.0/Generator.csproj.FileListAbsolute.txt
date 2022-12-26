@@ -1,0 +1,15 @@
+D:\VSproj\KPI_Algorithms\1\Generator\bin\Release\net6.0\Generator.exe
+D:\VSproj\KPI_Algorithms\1\Generator\bin\Release\net6.0\Generator.deps.json
+D:\VSproj\KPI_Algorithms\1\Generator\bin\Release\net6.0\Generator.runtimeconfig.json
+D:\VSproj\KPI_Algorithms\1\Generator\bin\Release\net6.0\Generator.dll
+D:\VSproj\KPI_Algorithms\1\Generator\bin\Release\net6.0\Generator.pdb
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.csproj.AssemblyReference.cache
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.AssemblyInfoInputs.cache
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.AssemblyInfo.cs
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.csproj.CoreCompileInputs.cache
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.dll
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\refint\Generator.dll
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.pdb
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\Generator.genruntimeconfig.cache
+D:\VSproj\KPI_Algorithms\1\Generator\obj\Release\net6.0\ref\Generator.dll
