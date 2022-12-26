@@ -1,0 +1,15 @@
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\bin\Release\net6.0\ExternalSorting.exe
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\bin\Release\net6.0\ExternalSorting.deps.json
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\bin\Release\net6.0\ExternalSorting.runtimeconfig.json
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\bin\Release\net6.0\ExternalSorting.dll
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\bin\Release\net6.0\ExternalSorting.pdb
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.csproj.AssemblyReference.cache
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.AssemblyInfoInputs.cache
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.AssemblyInfo.cs
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.csproj.CoreCompileInputs.cache
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.dll
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\refint\ExternalSorting.dll
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.pdb
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ExternalSorting.genruntimeconfig.cache
+D:\VSproj\KPI_Algorithms\1\ExternalSorting\obj\Release\net6.0\ref\ExternalSorting.dll
