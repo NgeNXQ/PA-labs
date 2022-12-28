@@ -3,7 +3,7 @@
 3. Запустити за допомогою dotnet run.
 
 
-  ![image](https://user-images.githubusercontent.com/89969565/209488379-65e17f45-30c3-4f45-a643-1614d88b13e3.png)
+   ![image](https://user-images.githubusercontent.com/89969565/209488379-65e17f45-30c3-4f45-a643-1614d88b13e3.png)
 
 4. Обрання алгоритму сортування. 0 - відповідає за звичайне зовнішнє, а 1 відповідає за попереднє сортування числових послідовностей.
 5. Програма виконує сортування файлу за допогою алгоритму зовнішнього сортування.
@@ -18,4 +18,4 @@
 8. Запуск тестів (dotnet test):
 
 
-  ![image](https://user-images.githubusercontent.com/89969565/209488873-d993a7e7-1d46-4d92-9f49-63b64c0ce0e6.png)
+   ![image](https://user-images.githubusercontent.com/89969565/209488873-d993a7e7-1d46-4d92-9f49-63b64c0ce0e6.png)
