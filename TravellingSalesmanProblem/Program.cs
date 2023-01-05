@@ -9,22 +9,22 @@ namespace AntColony
             System.Console.InputEncoding = System.Text.Encoding.Unicode;
             System.Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            int a = InputInt("Введіть значення альфа. Стандарте значення величини згідно до варіанту - 2. Введіть число: ");
-            int b = InputInt("Введіть значення бета. Стандарте значення величини згідно до варіанту - 4. Введіть число: ");
-            float p = InputFloat("Введіть значення випаровування ферамону. Стандарте значення величини згідно до варіанту - 0.4. Введіть число: ");
+            int a = InputInt("Введіть значення АЛЬФА. Стандарте значення згідно до варіанту - 2. Введіть число: ", 0, Int32.MaxValue);
+            int b = InputInt("Введіть значення БЕТА. Стандарте значення згідно до варіанту - 4. Введіть число: ", 0, Int32.MaxValue);
+            float p = InputFloat("Введіть значення випаровування ферамону. Стандарте значення згідно до варіанту - 0.4. Введіть число: ", 0.0f, 1.0f);
 
-            int numberOfIterations = InputInt("Введіть кількість ітерцій: ");
-            int numberOfAnts = InputInt("Введіть кількість мурах. Стандарте значення величини згідно до варіанту - 30. Введіть число: ");
-            int numberOfCities = InputInt("Введіть кількість міст. Стандарте значення величини згідно до варіанту - 50. Введіть число: ");
+            int numberOfIterations = InputInt("Введіть кількість ітерцій: ", 0, Int32.MaxValue);
+            int numberOfAnts = InputInt("Введіть кількість мурах. Стандарте значення згідно до варіанту - 30. Введіть число: ", 0, Int32.MaxValue);
+            int numberOfCities = InputInt("Введіть кількість міст. Стандарте значення згідно до варіанту - 50. Введіть число: ", 0, Int32.MaxValue);
 
-            int MinDistance = InputInt("Введіть мінімальну відстань між містами. Стандарте значення величини згідно до варіанту - 5. Введіть число: ");
-            int MaxDistance = InputInt("Введіть максимальну відстань між містами. Стандарте значення величини згідно до варіанту - 50. Введіть число: ");
+            int MinDistance = InputInt("Введіть мінімальну відстань між містами. Стандарте значення згідно до варіанту - 5. Введіть число: ", 0, Int32.MaxValue);
+            int MaxDistance = InputInt("Введіть максимальну відстань між містами. Стандарте значення згідно до варіанту - 50. Введіть число: ", 0, Int32.MaxValue);
 
             while (MinDistance > MaxDistance)
             {
                 Console.WriteLine("Мінімальна відстань має бути менше максимальної!");
-                MinDistance = InputInt("Введіть мінімальну відстань між містами. Стандарте значення величини згідно до варіанту - 5. Введіть число: ");
-                MaxDistance = InputInt("Введіть максимальну відстань між містами. Стандарте значення величини згідно до варіанту - 50. Введіть число: ");
+                MinDistance = InputInt("Введіть мінімальну відстань між містами. Стандарте значення згідно до варіанту - 5. Введіть число: ", 0, Int32.MaxValue);
+                MaxDistance = InputInt("Введіть максимальну відстань між містами. Стандарте значення згідно до варіанту - 50. Введіть число: ", 0, Int32.MaxValue);
             }
 
             Graph graph = new Graph(numberOfCities);
@@ -55,7 +55,7 @@ namespace AntColony
             graph.PrintPath();
         }
 
-        private static int InputInt(string text)
+        private static int InputInt(string text, int min, int max)
         {
             int value;
 
@@ -63,15 +63,29 @@ namespace AntColony
             {
                 Console.Write(text);
 
-                if (Int32.TryParse(Console.ReadLine(), out value) && value > 0)
-                    return value;
+                if (Int32.TryParse(Console.ReadLine(), out value))
+                {
+                    if (value <= min)
+                    {
+                        Console.WriteLine($"Введення значення має бути більше {min}!");
+                        continue;
+                    }
 
-                Console.WriteLine("Введене значення має бути цілим числом, яке більше 0!");
+                    if (value >= max)
+                    {
+                        Console.WriteLine($"Введення значення має бути менше {max}!");
+                        continue;
+                    }
+
+                    return value;
+                }
+
+                Console.WriteLine("Ввена величина має бути числом!");
 
             } while (true);
         }
 
-        private static float InputFloat(string text)
+        private static float InputFloat(string text, float min, float max)
         {
             float value;
 
@@ -79,10 +93,24 @@ namespace AntColony
             {
                 Console.Write(text);
 
-                if (Single.TryParse(Console.ReadLine(), out value) && value > 0.0f)
-                    return value;
+                if (Single.TryParse(Console.ReadLine(), out value))
+                {
+                    if (value <= min)
+                    {
+                        Console.WriteLine($"Введення значення має бути більше {min}!");
+                        continue;
+                    }
 
-                Console.WriteLine("Введене значення має бути цілим числом, яке більше 0!");
+                    if (value >= max)
+                    {
+                        Console.WriteLine($"Введення значення має бути менше {max}!");
+                        continue;
+                    }
+
+                    return value;
+                }
+
+                Console.WriteLine("Ввена величина має бути числом!");
 
             } while (true);
         }

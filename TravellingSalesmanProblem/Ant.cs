@@ -2,7 +2,7 @@
 {
     public sealed class Ant
     {
-        public static List<int> AllCities { get; set; }
+        public static List<int> AllCities { get; set; } = new List<int>();
 
         private Graph graph;
         private int nextCity;
@@ -21,6 +21,7 @@
             this.StartCity = startCity;
             this.currentCity = startCity;
             this.VisitedCities = new List<int>();
+            citiesToVisit = new List<int>();
         }
 
         public void Move(int a, int b)
