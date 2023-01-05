@@ -67,20 +67,20 @@ namespace AntColony
                 {
                     if (value <= min)
                     {
-                        Console.WriteLine($"Введення значення має бути більше {min}!");
+                        Console.WriteLine($"Введене значення має бути більше {min}!");
                         continue;
                     }
 
                     if (value >= max)
                     {
-                        Console.WriteLine($"Введення значення має бути менше {max}!");
+                        Console.WriteLine($"Введене значення має бути менше {max}!");
                         continue;
                     }
 
                     return value;
                 }
 
-                Console.WriteLine("Ввена величина має бути числом!");
+                Console.WriteLine("Введена величина має бути числом!");
 
             } while (true);
         }
@@ -97,20 +97,20 @@ namespace AntColony
                 {
                     if (value <= min)
                     {
-                        Console.WriteLine($"Введення значення має бути більше {min}!");
+                        Console.WriteLine($"Введене значення має бути більше {min}!");
                         continue;
                     }
 
                     if (value >= max)
                     {
-                        Console.WriteLine($"Введення значення має бути менше {max}!");
+                        Console.WriteLine($"Введене значення має бути менше {max}!");
                         continue;
                     }
 
                     return value;
                 }
 
-                Console.WriteLine("Ввена величина має бути числом!");
+                Console.WriteLine("Введена величина має бути числом!");
 
             } while (true);
         }
