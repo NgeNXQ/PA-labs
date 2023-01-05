@@ -15,7 +15,7 @@ namespace DataTable
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Validation.ValidateKeyInput(KeyInput, out int key))
+            if (Validation.ValidateKeyInput(KeyInput, MainRecord.MAX_KEY_LENGTH, out int key))
             {
                 if (Validation.ValidateValueInput(ValueInput, MainRecord.MAX_VALUE_LENGTH))
                 {
@@ -36,6 +36,12 @@ namespace DataTable
                     }
                 }
             }
-        }      
+        }
+
+        public void Clear()
+        {
+            this.KeyInput.Clear();
+            this.ValueInput.Clear();
+        }
     }
 }

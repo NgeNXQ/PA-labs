@@ -33,19 +33,29 @@ namespace DataTable
             InitializeComponent();
         }
 
-        private void Load_Click(object sender, EventArgs e)
+        private void Add_Click(object sender, EventArgs e)
         {
-            DataTable = new DataTable(main, index, overflow);
-            UpdateTables();
+            adding.Clear();
+            adding.ShowDialog();
         }
 
-        private void Add_Click(object sender, EventArgs e) => adding.ShowDialog();
+        private void Get_Click(object sender, EventArgs e)
+        {
+            getting.Clear();
+            getting.ShowDialog();
+        }
 
-        private void Get_Click(object sender, EventArgs e) => getting.ShowDialog();
+        private void Edit_Click(object sender, EventArgs e)
+        {
+            editing.Clear();
+            editing.ShowDialog();
+        }
 
-        private void Edit_Click(object sender, EventArgs e) => editing.ShowDialog();
-
-        private void Remove_Click(object sender, EventArgs e) => removing.ShowDialog();
+        private void Remove_Click(object sender, EventArgs e)
+        {
+            removing.Clear();
+            removing.ShowDialog();
+        }
 
         private void Clear_Click(object sender, EventArgs e)
         {
@@ -75,6 +85,9 @@ namespace DataTable
                 File.Create(index).Dispose();
                 File.Create(overflow).Dispose();
             }
+
+            DataTable = new DataTable(main, index, overflow);
+            UpdateTables();
         }
     }
 }
