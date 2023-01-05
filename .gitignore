@@ -1,0 +1,9 @@
+# Build results
+[Bb]in/
+[Oo]bj/Debug/
+.vs/
+
+#Cache
+*.Cache
+*.cache
+*.txt
