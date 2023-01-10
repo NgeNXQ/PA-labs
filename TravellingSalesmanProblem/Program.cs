@@ -15,7 +15,7 @@ namespace AntColony
 
             int numberOfIterations = InputInt("Введіть кількість ітерцій: ", 0, Int32.MaxValue);
             int numberOfAnts = InputInt("Введіть кількість мурах. Стандарте значення згідно до варіанту - 30. Введіть число: ", 0, Int32.MaxValue);
-            int numberOfCities = InputInt("Введіть кількість міст. Стандарте значення згідно до варіанту - 50. Введіть число: ", 0, Int32.MaxValue);
+            int numberOfCities = InputInt("Введіть кількість міст. Стандарте значення згідно до варіанту - 50. Введіть число: ", 1, Int32.MaxValue);
 
             int MinDistance = InputInt("Введіть мінімальну відстань між містами. Стандарте значення згідно до варіанту - 5. Введіть число: ", 0, Int32.MaxValue);
             int MaxDistance = InputInt("Введіть максимальну відстань між містами. Стандарте значення згідно до варіанту - 50. Введіть число: ", 0, Int32.MaxValue);
