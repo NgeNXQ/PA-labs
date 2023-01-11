@@ -2,6 +2,6 @@
 2. Перейти у директорію та запустити за допомогою dotnet run
 
 
-  ![image](https://user-images.githubusercontent.com/89969565/211698600-44883bfb-0b9b-42be-bfd7-eccc4de530b9.png)
+   ![image](https://user-images.githubusercontent.com/89969565/211698600-44883bfb-0b9b-42be-bfd7-eccc4de530b9.png)
 
 3. Ввести відповідні значення, які запрошує програма
